@@ -13,7 +13,8 @@
 #' dfs <- synthetic_cdisc_data("rcd_2021_03_22")
 #' names(dfs)
 #'
-#' synthetic_cdisc_data("latest")
+#' latest_dfs <- synthetic_cdisc_data("latest")
+#' names(latest_dfs)
 #'
 synthetic_cdisc_data <- function(name) {
 
@@ -42,6 +43,7 @@ synthetic_cdisc_data <- function(name) {
 
 #' List Available Data
 #'
+#' @importFrom utils installed.packages data
 #' @export
 #'
 #' @examples
@@ -54,15 +56,25 @@ ls_synthetic_cdisc_data <- function() {
   pkgs <- unique(all_pkgs[grepl("^scda\\.[[:digit:]]{4}$", all_pkgs)])
 
   if (length(pkgs) == 0) {
-    data.frame(Name = character(0), Title = character(0), Package = character(0))
+    data.frame(
+      Name = character(0),
+      Title = character(0),
+      Package = character(0),
+      stringsAsFactors = FALSE
+    )
   } else {
     all <- do.call(rbind, lapply(pkgs, function(pkgi) {
       dnms <- data(package = pkgi)$results[, 3:4]
 
       df <- if (length(dnms) == 2) {
-        data.frame(Item = dnms[1], Title = dnms[2], row.names = NULL)
+        data.frame(
+          Item = dnms[1],
+          Title = dnms[2],
+          row.names = NULL,
+          stringsAsFactors = FALSE
+        )
       } else {
-        as.data.frame(dnms)
+        as.data.frame(dnms, stringsAsFactors = FALSE)
       }
 
       df$Package = pkgi
