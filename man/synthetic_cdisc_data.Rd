@@ -4,7 +4,7 @@
 \alias{synthetic_cdisc_data}
 \title{Get Synthetic CDISC Data}
 \usage{
-synthetic_cdisc_data(name, external = FALSE)
+synthetic_cdisc_data(name)
 }
 \arguments{
 \item{name}{name of data collection. If name == "latest" then the newest datasets get returned}
@@ -20,6 +20,7 @@ Get Synthetic CDISC Data
 dfs <- synthetic_cdisc_data("rcd_2021_03_22")
 names(dfs)
 
-synthetic_cdisc_data("latest")
+latest_dfs <- synthetic_cdisc_data("latest")
+names(latest_dfs)
 
 }

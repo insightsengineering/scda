@@ -1,10 +1,16 @@
 Package: scda
-Type: Package
 Title: Package To Access Synthetic CDISC Archive Data
 Version: 0.1.0
 Authors@R: person("NEST", email = "nestcicd@roche.com", role = c("aut", "cre"))
-Description: Access Synthetic CDISC Data from Archive Packages
-License: What license is it under?
+Description: Access Synthetic CDISC Data from Archive Packages.
+License: file LICENSE
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Depends: 
+    R (>= 2.10)
+Imports: 
+    utils
+Suggests: 
+    scda.2020,
+    scda.2021
