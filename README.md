@@ -1,3 +1,4 @@
+
 # Synthetic CDISC Data Archive Accessor Functions
 
 This R package contains functions for accessing synthetic CDISC from data archihve packages. Data from archive packages will not be changed over time so that it can be used for unit testing.
@@ -41,3 +42,4 @@ names(dfs)
 latest_dfs <- synthetic_cdisc_data("latest")
 names(latest_dfs)
 ```
+
