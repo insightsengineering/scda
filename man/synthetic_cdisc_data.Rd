@@ -16,11 +16,14 @@ A named list with synthetic data
 Get Synthetic CDISC Data
 }
 \examples{
+\dontrun{
+library(scda.2020)
+library(scda.2021)
 
 dfs <- synthetic_cdisc_data("rcd_2021_03_22")
 names(dfs)
 
 latest_dfs <- synthetic_cdisc_data("latest")
 names(latest_dfs)
-
+}
 }

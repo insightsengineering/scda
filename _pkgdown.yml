@@ -1,0 +1,14 @@
+template:
+  params:
+    bootswatch: cerulean
+
+navbar:
+  right:
+    - icon: fa-github
+      href: https://github.roche.com/NEST/scda
+
+reference:
+- title: Data archive accessor functions
+  contents:
+  - ls_synthetic_cdisc_data
+  - synthetic_cdisc_data
