@@ -1,0 +1,13 @@
+
+---
+upstream_repos:
+- repo: NEST/test.nest
+  host: https://github.roche.com
+
+downstream_repos:
+- repo: NEST/tern
+  host: https://github.roche.com
+
+current_repo:
+  repo: NEST/scda
+  host: https://github.roche.com
