@@ -3,3 +3,4 @@
 ^_pkgdown\.yml$
 ^Jenkinsfile$
 README.*
+^staged_dependencies.yaml$
