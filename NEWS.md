@@ -1,5 +1,6 @@
 # scda 0.1.0.9000
 
+* Removed mentions of Roche internal services from the README file.
 
 # scda 0.1.0
 

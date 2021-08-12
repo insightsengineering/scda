@@ -4,3 +4,4 @@
 ^Jenkinsfile$
 README.*
 ^staged_dependencies.yaml$
+^LICENSE\.md$
