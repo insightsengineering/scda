@@ -12,6 +12,7 @@ RoxygenNote: 7.1.1
 Depends: 
     R (>= 3.5.0)
 Imports: 
-    utils
+    utils,
+    memoise
 Suggests: 
     scda.2021

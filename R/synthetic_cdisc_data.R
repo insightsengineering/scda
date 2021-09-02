@@ -20,7 +20,10 @@
 #' names(latest_dfs)
 #' }
 synthetic_cdisc_data <- function(name) {
+  synthetic_cdisc_data_read(name)
+}
 
+synthetic_cdisc_data_raw <- function(name) {
   avail <- ls_synthetic_cdisc_data()
 
   if (nrow(avail) == 0) {
@@ -47,6 +50,7 @@ synthetic_cdisc_data <- function(name) {
   structure(e[[sel$Name]], data_from = c(sel$Package, sel$Name))
 }
 
+synthetic_cdisc_data_read <- memoise::memoise(synthetic_cdisc_data_raw)
 
 #' List Available Data
 #'
