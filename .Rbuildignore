@@ -5,3 +5,4 @@
 README.*
 ^staged_dependencies\.yaml$
 ^LICENSE\.md$
+^\.gitlab-ci\.yml$
