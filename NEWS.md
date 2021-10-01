@@ -1,6 +1,6 @@
 # scda 0.1.1
 
-* Removed mentions of Roche internal services from the README file.
+* Updated `LICENCE` and `README` with new package references.
 * Added `error_on_lint: TRUE` to `.lintr`.
 
 # scda 0.1.0
