@@ -9,7 +9,7 @@ synthetic_cdisc_dataset(dataset_name, name)
 \arguments{
 \item{dataset_name}{the name of the required dataset e.g "adsl"}
 
-\item{name}{name of data collection. If name == "latest" then the newest datasets get returned}
+\item{name}{name of data collection. If name = "latest" then the newest datasets get returned}
 }
 \value{
 A data.frame of synthetic data

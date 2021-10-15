@@ -1,7 +1,7 @@
 #' #' Get Synthetic CDISC Dataset
 #'
 #' @param dataset_name the name of the required dataset e.g "adsl"
-#' @param name name of data collection. If name == "latest" then the newest datasets get returned
+#' @param name name of data collection. If name = "latest" then the newest datasets get returned
 #'
 #' @return A data.frame of synthetic data
 #' @export
