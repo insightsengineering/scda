@@ -104,7 +104,7 @@ ls_synthetic_cdisc_data <- function() {
         as.data.frame(dnms, stringsAsFactors = FALSE)
       }
 
-      df$Package = pkgi
+      df$Package <- pkgi # nolint
       df
     }))
 
@@ -112,7 +112,7 @@ ls_synthetic_cdisc_data <- function() {
 
     dates <- as.Date(substring(all$Name, nchar(all$Name) - 9), format = "%Y_%m_%d")
 
-    all$Latest <- FALSE
+    all$Latest <- FALSE # nolint
     all$Latest[which.max(dates)] <- TRUE
 
     all
