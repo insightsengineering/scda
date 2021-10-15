@@ -1,3 +1,23 @@
+#' #' Get Synthetic CDISC Dataset
+#'
+#' @param dataset_name the name of the required dataset e.g "adsl"
+#' @param name name of data collection. If name == "latest" then the newest datasets get returned
+#'
+#' @return A data.frame of synthetic data
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' library(scda.2020)
+#' library(scda.2021)
+#'
+#' adsl <- synthetic_cdisc_dataset("adsl", "latest")
+#' }
+synthetic_cdisc_dataset <- function(dataset_name, name) {
+  return(synthetic_cdisc_data(name)[[dataset_name]])
+}
+
+
 
 #' Get Synthetic CDISC Data
 #'

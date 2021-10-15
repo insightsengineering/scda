@@ -1,5 +1,7 @@
 # scda 0.1.1.9000
 
+* Add `synthetic_cdisc_dataset` function to directly pull out a single dataset (which can be used in `DatasetConnector` in teal).
+
 # scda 0.1.1
 
 * Updated `LICENCE` and `README` with new package references.

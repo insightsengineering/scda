@@ -2,5 +2,6 @@
 
 export(ls_synthetic_cdisc_data)
 export(synthetic_cdisc_data)
+export(synthetic_cdisc_dataset)
 importFrom(utils,data)
 importFrom(utils,installed.packages)
