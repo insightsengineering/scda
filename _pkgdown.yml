@@ -15,3 +15,4 @@ reference:
   contents:
   - ls_synthetic_cdisc_data
   - synthetic_cdisc_data
+  - synthetic_cdisc_dataset
