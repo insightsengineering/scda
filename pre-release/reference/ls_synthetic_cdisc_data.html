@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Get Synthetic CDISC Data — synthetic_cdisc_data • scda</title>
+<title>List Available Data — ls_synthetic_cdisc_data • scda</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,8 @@
 
 
 
-<meta property="og:title" content="Get Synthetic CDISC Data — synthetic_cdisc_data" />
-<meta property="og:description" content="Get Synthetic CDISC Data" />
+<meta property="og:title" content="List Available Data — ls_synthetic_cdisc_data" />
+<meta property="og:description" content="List Available Data" />
 
 
 
@@ -54,6 +54,16 @@
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125641273-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125641273-1');
+</script>
 
 
   </head>
@@ -72,7 +82,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">scda</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -80,7 +90,7 @@
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -103,7 +113,7 @@ Other releases
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.roche.com/NEST/scda">
+  <a href="https://github.com/insightsengineering/scda">
     <span class="fa fa-github"></span>
      
   </a>
@@ -121,41 +131,27 @@ Other releases
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Get Synthetic CDISC Data</h1>
+    <h1>List Available Data</h1>
     
-    <div class="hidden name"><code>synthetic_cdisc_data.Rd</code></div>
+    <div class="hidden name"><code>ls_synthetic_cdisc_data.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Get Synthetic CDISC Data</p>
+    <p>List Available Data</p>
     </div>
 
-    <pre class="usage"><span class='fu'>synthetic_cdisc_data</span>(<span class='no'>name</span>)</pre>
+    <pre class="usage"><span class='fu'>ls_synthetic_cdisc_data</span><span class='op'>(</span><span class='op'>)</span></pre>
 
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>name</th>
-      <td><p>name of data collection. If name == "latest" then the newest datasets get returned</p></td>
-    </tr>
-    </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A named list with synthetic data</p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='kw'>if</span> (<span class='fl'>FALSE</span>) {
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>scda.2020</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/library.html'>library</a></span>(<span class='no'>scda.2021</span>)
-
-<span class='no'>dfs</span> <span class='kw'>&lt;-</span> <span class='fu'>synthetic_cdisc_data</span>(<span class='st'>"rcd_2021_03_22"</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>dfs</span>)
-
-<span class='no'>latest_dfs</span> <span class='kw'>&lt;-</span> <span class='fu'>synthetic_cdisc_data</span>(<span class='st'>"latest"</span>)
-<span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span>(<span class='no'>latest_dfs</span>)
-}</div></pre>
+    <pre class="examples"><div class='input'>
+<span class='fu'>ls_synthetic_cdisc_data</span><span class='op'>(</span><span class='op'>)</span>
+</div><div class='output co'>#&gt;             Name                                  Title   Package Latest
+#&gt; 1 rcd_2021_03_22 Cached datasets from random.cdisc.data scda.2021  FALSE
+#&gt; 2 rcd_2021_05_05 Cached datasets from random.cdisc.data scda.2021  FALSE
+#&gt; 3 rcd_2021_07_07 Cached datasets from random.cdisc.data scda.2021   TRUE</div><div class='input'>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
@@ -171,7 +167,7 @@ Other releases
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.1.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>
