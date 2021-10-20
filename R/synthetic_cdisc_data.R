@@ -1,3 +1,22 @@
+#' Get Synthetic CDISC Dataset
+#'
+#' @param dataset_name the lowercase name of the requested dataset e.g. "adsl"
+#' @param name name of data collection. If name = "latest" then the newest datasets get returned
+#'
+#' @return A data.frame of synthetic data
+#' @export
+#'
+#' @examples
+#' \dontrun{
+#' library(scda.2021)
+#'
+#' adsl <- synthetic_cdisc_dataset("adsl", "latest")
+#' }
+synthetic_cdisc_dataset <- function(dataset_name, name) {
+  synthetic_cdisc_data(name)[[dataset_name]]
+}
+
+
 
 #' Get Synthetic CDISC Data
 #'
@@ -10,7 +29,6 @@
 #'
 #' @examples
 #' \dontrun{
-#' library(scda.2020)
 #' library(scda.2021)
 #'
 #' dfs <- synthetic_cdisc_data("rcd_2021_03_22")
@@ -84,7 +102,7 @@ ls_synthetic_cdisc_data <- function() {
         as.data.frame(dnms, stringsAsFactors = FALSE)
       }
 
-      df$Package = pkgi
+      df$Package <- pkgi # nolint
       df
     }))
 
@@ -92,7 +110,7 @@ ls_synthetic_cdisc_data <- function() {
 
     dates <- as.Date(substring(all$Name, nchar(all$Name) - 9), format = "%Y_%m_%d")
 
-    all$Latest <- FALSE
+    all$Latest <- FALSE # nolint
     all$Latest[which.max(dates)] <- TRUE
 
     all

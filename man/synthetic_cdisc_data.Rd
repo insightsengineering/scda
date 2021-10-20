@@ -17,7 +17,6 @@ Get Synthetic CDISC Data
 }
 \examples{
 \dontrun{
-library(scda.2020)
 library(scda.2021)
 
 dfs <- synthetic_cdisc_data("rcd_2021_03_22")
