@@ -3,6 +3,7 @@
   packageStartupMessage(
     "\nYou are using scda version ",
     read.dcf(system.file("DESCRIPTION", package = "scda"))[, "Version"],
-    if (!is_scdax) "\nThere are no scda.XXXX libraries installed, like scda.2021. \nPlease install a scda database to take full advantage of the scda package."
+    if (!is_scdax) paste0("\nThere are no scda.XXXX libraries installed, like scda.2021.",
+                          "\nPlease install a scda database to take full advantage of the scda package.")
   )
 }
