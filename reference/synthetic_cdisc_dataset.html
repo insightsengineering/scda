@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • scda</title>
+<title>Get Synthetic CDISC Dataset — synthetic_cdisc_dataset • scda</title>
 
 
 <!-- jquery -->
@@ -39,7 +39,8 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="Get Synthetic CDISC Dataset — synthetic_cdisc_dataset" />
+<meta property="og:description" content="Get Synthetic CDISC Dataset" />
 
 
 
@@ -68,7 +69,7 @@
   </head>
 
   <body data-spy="scroll" data-target="#toc">
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -118,54 +119,44 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>Get Synthetic CDISC Dataset</h1>
+    
+    <div class="hidden name"><code>synthetic_cdisc_dataset.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    <p>Get Synthetic CDISC Dataset</p>
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
+    <pre class="usage"><span class='fu'>synthetic_cdisc_dataset</span><span class='op'>(</span><span class='va'>dataset_name</span>, <span class='va'>name</span><span class='op'>)</span></pre>
 
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-data-archive-accessor-functions" class="hasAnchor"><a href="#section-data-archive-accessor-functions" class="anchor"></a>Data archive accessor functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      
-      
-    </tbody><tbody>
-      
-      
-      <tr>
-        
-        <td>
-          <p><code><a href="ls_synthetic_cdisc_data.html">ls_synthetic_cdisc_data()</a></code> </p>
-        </td>
-        <td><p>List Available Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="synthetic_cdisc_data.html">synthetic_cdisc_data()</a></code> </p>
-        </td>
-        <td><p>Get Synthetic CDISC Data</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="synthetic_cdisc_dataset.html">synthetic_cdisc_dataset()</a></code> </p>
-        </td>
-        <td><p>Get Synthetic CDISC Dataset</p></td>
-      </tr>
-    </tbody>
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>dataset_name</th>
+      <td><p>the lowercase name of the requested dataset e.g. "adsl"</p></td>
+    </tr>
+    <tr>
+      <th>name</th>
+      <td><p>name of data collection. If name = "latest" then the newest datasets get returned</p></td>
+    </tr>
     </table>
-  </div>
 
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
+
+    <p>A data.frame of synthetic data</p>
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
+<span class='kw'><a href='https://rdrr.io/r/base/library.html'>library</a></span><span class='op'>(</span><span class='va'>scda.2021</span><span class='op'>)</span>
+
+<span class='va'>adsl</span> <span class='op'>&lt;-</span> <span class='fu'>synthetic_cdisc_dataset</span><span class='op'>(</span><span class='st'>"adsl"</span>, <span class='st'>"latest"</span><span class='op'>)</span>
+<span class='op'>}</span>
+</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
