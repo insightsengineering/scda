@@ -1,5 +1,7 @@
 # scda 0.1.1.9000
 
+* Added the `.onLoad` message with possible guidance to install an scda database package.
+
 # scda 0.1.1
 
 * Updated `LICENCE` and `README` with new package references.
