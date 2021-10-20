@@ -8,7 +8,6 @@
 #'
 #' @examples
 #' \dontrun{
-#' library(scda.2020)
 #' library(scda.2021)
 #'
 #' adsl <- synthetic_cdisc_dataset("adsl", "latest")
@@ -30,7 +29,6 @@ synthetic_cdisc_dataset <- function(dataset_name, name) {
 #'
 #' @examples
 #' \dontrun{
-#' library(scda.2020)
 #' library(scda.2021)
 #'
 #' dfs <- synthetic_cdisc_data("rcd_2021_03_22")

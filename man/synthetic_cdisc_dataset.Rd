@@ -2,12 +2,12 @@
 % Please edit documentation in R/synthetic_cdisc_data.R
 \name{synthetic_cdisc_dataset}
 \alias{synthetic_cdisc_dataset}
-\title{#' Get Synthetic CDISC Dataset}
+\title{Get Synthetic CDISC Dataset}
 \usage{
 synthetic_cdisc_dataset(dataset_name, name)
 }
 \arguments{
-\item{dataset_name}{the name of the required dataset e.g "adsl"}
+\item{dataset_name}{the lowercase name of the requested dataset e.g. "adsl"}
 
 \item{name}{name of data collection. If name = "latest" then the newest datasets get returned}
 }
@@ -15,11 +15,10 @@ synthetic_cdisc_dataset(dataset_name, name)
 A data.frame of synthetic data
 }
 \description{
-#' Get Synthetic CDISC Dataset
+Get Synthetic CDISC Dataset
 }
 \examples{
 \dontrun{
-library(scda.2020)
 library(scda.2021)
 
 adsl <- synthetic_cdisc_dataset("adsl", "latest")
