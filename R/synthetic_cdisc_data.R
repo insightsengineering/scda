@@ -14,7 +14,7 @@
 #' adsl <- synthetic_cdisc_dataset("adsl", "latest")
 #' }
 synthetic_cdisc_dataset <- function(dataset_name, name) {
-  return(synthetic_cdisc_data(name)[[dataset_name]])
+  synthetic_cdisc_data(name)[[dataset_name]]
 }
 
 
