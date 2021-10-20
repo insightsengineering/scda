@@ -1,5 +1,7 @@
 # scda 0.1.1.9000
 
+* Updated R version requirement to >= 3.6.
+
 # scda 0.1.1
 
 * Updated `LICENCE` and `README` with new package references.
