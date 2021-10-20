@@ -3,5 +3,9 @@
 ^_pkgdown\.yml$
 ^Jenkinsfile$
 README.*
-^staged_dependencies.yaml$
+^staged_dependencies\.yaml$
 ^LICENSE\.md$
+^\.gitlab-ci\.yml$
+^\.github
+^\.lintr
+coverage.*
