@@ -12,5 +12,4 @@ List Available Data
 \examples{
 
 ls_synthetic_cdisc_data()
-
 }

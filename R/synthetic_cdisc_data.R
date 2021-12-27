@@ -38,7 +38,6 @@ synthetic_cdisc_dataset <- function(dataset_name, name) {
 #' names(latest_dfs)
 #' }
 synthetic_cdisc_data <- function(name) {
-
   avail <- ls_synthetic_cdisc_data()
 
   if (nrow(avail) == 0) {
@@ -74,9 +73,7 @@ synthetic_cdisc_data <- function(name) {
 #' @examples
 #'
 #' ls_synthetic_cdisc_data()
-#'
 ls_synthetic_cdisc_data <- function() {
-
   all_pkgs <- as.vector(installed.packages()[, "Package"])
   pkgs <- unique(all_pkgs[grepl("^scda\\.[[:digit:]]{4}$", all_pkgs)])
 
@@ -115,5 +112,4 @@ ls_synthetic_cdisc_data <- function() {
 
     all
   }
-
 }
