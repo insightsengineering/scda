@@ -25,6 +25,8 @@
 </script>
 </head>
 <body data-spy="scroll" data-target="#toc">
+    
+
     <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -37,39 +39,22 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">scda</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1.9007</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.1.1.9008</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fas fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
 <li>
   <a href="news/index.html">Changelog</a>
 </li>
-<!-- start_releases -->
-<li class="dropdown">
-	<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-Other releases
-<span class="caret"></span></a><ul class="dropdown-menu" role="menu">
-   <li><a href="index.html">latest</a></li>
-   <li><a href="pre-release/index.html">pre-release</a></li>
-   <li><a href="v0.1.1/index.html">v0.1.1</a></li>
-   <li><a href="v0.1.0/index.html">v0.1.0</a></li>
-</ul></li>
-<!-- end_releases -->
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/insightsengineering/scda">
+  <a href="https://github.com/insightsengineering/scda" class="external-link">
     <span class="fa fa-github"></span>
      
   </a>
@@ -87,22 +72,22 @@ Other releases
       </header><div class="row">
   <div class="contents col-md-9">
 
-<div id="synthetic-cdisc-data-archive-accessor-functions" class="section level1">
-<div class="page-header"><h1 class="hasAnchor">
-<a href="#synthetic-cdisc-data-archive-accessor-functions" class="anchor"></a>Synthetic CDISC Data Archive Accessor Functions</h1></div>
+<div class="section level1">
+<div class="page-header"><h1 id="synthetic-cdisc-data-archive-accessor-functions">Synthetic CDISC Data Archive Accessor Functions<a class="anchor" aria-label="anchor" href="#synthetic-cdisc-data-archive-accessor-functions"></a>
+</h1></div>
 <p>This R package contains functions for accessing synthetic CDISC from data archive packages. Data from archive packages will not be changed over time so that it can be used for unit testing.</p>
 </div>
-<div id="installation" class="section level1">
-<h1 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h1>
-<div id="clone-and-install-manually" class="section level2">
-<h2 class="hasAnchor">
-<a href="#clone-and-install-manually" class="anchor"></a>Clone and install manually</h2>
-<ol>
+<div class="section level1">
+<h1 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h1>
+<div class="section level2">
+<h2 id="clone-and-install-manually">Clone and install manually<a class="anchor" aria-label="anchor" href="#clone-and-install-manually"></a>
+</h2>
+<ol style="list-style-type: decimal">
 <li>
 <p>Clone the repository</p>
-<p>The repository can be downloaded directly from the <code>github.com</code> site as an archive (see <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository">GitHub tutorial on cloning to learn more</a>). Alternatively, Git command line tools offer the same functionality, without the need for manual downloading and unpacking the archive, but require to authenticate to GitHub. You can authenticate using a key pair or a Personal Access Token (PAT). Please refer to excellent GitHub tutorials on <a href="https://docs.github.com/en/github/authenticating-to-github">connecting to GitHub using SSH</a> or <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token">creating and using PAT</a>.</p>
-<ol>
+<p>The repository can be downloaded directly from the <code>github.com</code> site as an archive (see <a href="https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository" class="external-link">GitHub tutorial on cloning to learn more</a>). Alternatively, Git command line tools offer the same functionality, without the need for manual downloading and unpacking the archive, but require to authenticate to GitHub. You can authenticate using a key pair or a Personal Access Token (PAT). Please refer to excellent GitHub tutorials on <a href="https://docs.github.com/en/github/authenticating-to-github" class="external-link">connecting to GitHub using SSH</a> or <a href="https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token" class="external-link">creating and using PAT</a>.</p>
+<ol style="list-style-type: decimal">
 <li>
 <p>Using PAT. Input in the Git Bash console, PowerShell or any Linux shell:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode sh"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> git clone https://github.com/insightsengineering/scda.git</span>
@@ -127,19 +112,19 @@ Other releases
 </li>
 </ol>
 </div>
-<div id="basic-usage" class="section level2">
-<h2 class="hasAnchor">
-<a href="#basic-usage" class="anchor"></a>Basic Usage</h2>
+<div class="section level2">
+<h2 id="basic-usage">Basic Usage<a class="anchor" aria-label="anchor" href="#basic-usage"></a>
+</h2>
 <p>You can see which data are available with</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/ls_synthetic_cdisc_data.html">ls_synthetic_cdisc_data</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
 <p>And to load a specific data archive use</p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">dfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/synthetic_cdisc_data.html">synthetic_cdisc_data</a></span><span class="op">(</span><span class="st">"rcd_2021_03_22"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">dfs</span><span class="op">)</span>
+<span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">dfs</span><span class="op">)</span>
 
 <span class="va">latest_dfs</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/synthetic_cdisc_data.html">synthetic_cdisc_data</a></span><span class="op">(</span><span class="st">"latest"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">latest_dfs</span><span class="op">)</span></code></pre></div>
+<span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">latest_dfs</span><span class="op">)</span></code></pre></div>
 </div>
 </div>
 
@@ -147,29 +132,42 @@ Other releases
 
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>Apache License 2.0 | file <a href="LICENSE-text.html">LICENSE</a>
 </li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing scda</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>NEST <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
+
+
 
   </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by NEST.</p>
+  <p></p>
+<p>Developed by NEST.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.1.</p>
 </div>
 
       </footer>
@@ -177,6 +175,8 @@ Other releases
 
   
 
+
+  
 
   </body>
 </html>
