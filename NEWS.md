@@ -1,8 +1,8 @@
 # scda 0.1.1.9009
 
 * Added the `.onLoad` message with possible guidance to install an scda database package.
-* Updated R version requirement to >= 3.6.
-* Add `synthetic_cdisc_dataset` function to directly pull out a single dataset.
+* Updated R version requirement to R >= 3.6.
+* Added `synthetic_cdisc_dataset` function to directly pull out a single dataset.
 
 # scda 0.1.1
 
