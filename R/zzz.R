@@ -1,5 +1,5 @@
 .onAttach <- function(libname, pkgname) { # nolint
-  scda_lookup <- paste0("scda.", 2020:(as.integer(format(Sys.Date(), "%Y")) + 1))
+  scda_lookup <- paste0("scda.", seq(2020, 2030))
   is_scdax <- any(sapply(scda_lookup, function(x) length(find.package(x, quiet = TRUE)) > 0))
   packageStartupMessage(
     if (!is_scdax) {
