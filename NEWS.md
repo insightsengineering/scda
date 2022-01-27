@@ -1,4 +1,4 @@
-# scda 0.1.2
+# scda 0.1.2.9000
 
 * Added the `.onLoad` message with possible guidance to install an scda database package.
 * Updated R version requirement to R >= 3.6.
