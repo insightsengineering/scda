@@ -3,7 +3,7 @@
 This R package contains functions for accessing synthetic CDISC from data archive packages such as [scda.2022](https://github.com/insightsengineering/scda.2022).
 At least one of these archive packages should be installed in order to use this package.
 
-This synthetic data can be used as test data when developing `teal` applications or statistical analysis functions and due to the data not been derived from a real clinical trial it provides an excellent method for generating reproducible examples when reporting errors. 
+This synthetic data can be used as test data when developing `teal` applications or statistical analysis functions and due to the data not been derived from a real clinical trial it provides an excellent method for generating reproducible examples when reporting errors.
 
 Note however that this data is somewhat idealized and real trial data is often significantly more complex and messy.
 
