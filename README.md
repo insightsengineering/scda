@@ -35,8 +35,8 @@ And to load a specific data archive use
 # chose the first one
 chosen_data_archive <- ls_synthetic_cdisc_data()$Name[1]
 print(chosen_data_archive)
-dfs <- synthetic_cdisc_data(chosen_data_archive)
-names(dfs)
+oldest_dfs <- synthetic_cdisc_data(chosen_data_archive)
+names(oldest_dfs)
 
 # chose the latest one
 latest_dfs <- synthetic_cdisc_data("latest")
