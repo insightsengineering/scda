@@ -14,7 +14,7 @@ This repository requires a personal access token to install see here [creating a
 
 ```r
 Sys.setenv(GITHUB_PAT = "your_access_token_here")
-install.packages("devtools")
+if (!require("devtools")) install.packages("devtools")
 devtools::install_github("insightsengineering/scda@*release")
 ```
 
