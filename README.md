@@ -1,67 +1,44 @@
+# Scda: Synthetic CDISC Data Archive Accessor Functions  <a href='https://github.com/insightsengineering/scda'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
 
-# Synthetic CDISC Data Archive Accessor Functions
+This R package contains functions for accessing synthetic CDISC from data archive packages such as [scda.2022](https://github.com/insightsengineering/scda.2022).
+At least one of these archive packages should be installed in order to use this package.
 
-This R package contains functions for accessing synthetic CDISC from data archive packages. Data from archive packages will not be changed over time so that it can be used for unit testing.
+This synthetic data can be used as test data when developing `teal` applications or statistical analysis functions and due to the data not been derived from a real clinical trial it provides an excellent method for generating reproducible examples when reporting errors.
 
-# Installation
+Note however that this data is somewhat idealized and real trial data is often significantly more complex and messy.
 
-## Clone and install manually
 
-1. Clone the repository
+## Installation
 
-   The repository can be downloaded directly from the `github.com` site as an archive (see [GitHub tutorial on cloning to learn more](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository-from-github/cloning-a-repository)).
-   Alternatively, Git command line tools offer the same functionality, without the need for manual downloading and unpacking the archive, but require to authenticate to GitHub.
-   You can authenticate using a key pair or a Personal Access Token (PAT). Please refer to excellent GitHub tutorials on [connecting to GitHub using SSH](https://docs.github.com/en/github/authenticating-to-github) or [creating and using PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token).
-   1. Using PAT. Input in the Git Bash console, PowerShell or any Linux shell:
+This repository requires a personal access token to install see here [creating and using PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token). Once this is set up, to install the latest released version of the package run:
 
-      ```sh
-      $ git clone https://github.com/insightsengineering/scda.git
-      Username: your_username_goes_here
-      Password: your_token_goes_here
-      ```
+```r
+Sys.setenv(GITHUB_PAT = "your_access_token_here")
+if (!require("devtools")) install.packages("devtools")
+devtools::install_github("insightsengineering/scda@*release")
+```
 
-   1. Using SSH. If set up properly, the repository is ready to be cloned executing:
-
-       ```sh
-       git clone https://github.com/insightsengineering/scda.git
-       ```
-
-   This creates a sub-directory `scda` containing the cloned repository.
-
-2. Build and install
-
-   The native R tools provide a quick way to install a package. Run in PowerShell or any Linux shell:
-
-   ```sh
-   R CMD build scda
-   ```
-
-   This command builds the package and creates an archive. The name of the archive is output by the command at then of building. Then input in the shell:
-
-   ```sh
-   Rscript -e 'install.packages("name_of_the_archive")
-   ```
-
-   Here is an example of a real command (with name_of_the_archive substituted by the output of the build command):
-
-   ```sh
-   Rscript -e 'install.packages("scda_0.1.0.9000.tar.gz")'
-   ```
+It is necessary to manually install at least one data archive package (e.g. [scda.2022](https://github.com/insightsengineering/scda.2022)) before using this package.
 
 ## Basic Usage
 
 You can see which data are available with
 
 ```r
+library(scda)
 ls_synthetic_cdisc_data()
 ```
 
 And to load a specific data archive use
 
 ```r
-dfs <- synthetic_cdisc_data("rcd_2021_03_22")
-names(dfs)
+# chose the first one
+chosen_data_archive <- ls_synthetic_cdisc_data()$Name[1]
+print(chosen_data_archive)
+oldest_dfs <- synthetic_cdisc_data(chosen_data_archive)
+names(oldest_dfs)
 
+# chose the latest one
 latest_dfs <- synthetic_cdisc_data("latest")
 names(latest_dfs)
 ```
