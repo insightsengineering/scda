@@ -1,4 +1,4 @@
-# Scda: Synthetic CDISC Data Archive Accessor Functions  <a href='https://github.com/insightsengineering/teal'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
+# Scda: Synthetic CDISC Data Archive Accessor Functions  <a href='https://github.com/insightsengineering/scda'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
 
 This R package contains functions for accessing synthetic CDISC from data archive packages such as [scda.2022](https://github.com/insightsengineering/scda.2022).
 At least one of these archive packages should be installed in order to use this package.
