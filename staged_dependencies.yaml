@@ -9,6 +9,9 @@ upstream_repos:
     repo: insightsengineering/scda.2022
     host: https://github.com
 downstream_repos:
+  insightsengineering/tern.mmrm:
+    repo: insightsengineering/tern.mmrm
+    host: https://github.com
   insightsengineering/tern:
     repo: insightsengineering/tern
     host: https://github.com
