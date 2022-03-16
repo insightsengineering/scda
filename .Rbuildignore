@@ -9,3 +9,4 @@ README.*
 ^\.github
 ^\.lintr
 coverage.*
+^\.pre-commit-config\.yaml
