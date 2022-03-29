@@ -1,5 +1,9 @@
 # scda 0.1.2.9004
 
+* Extended support to `scda.2022`.
+
+# scda 0.1.2
+
 * Added the `.onLoad` message with possible guidance to install an scda database package.
 * Updated R version requirement to R >= 3.6.
 * Added `synthetic_cdisc_dataset` function to directly pull out a single dataset.
