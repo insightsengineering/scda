@@ -1,6 +1,6 @@
 #' Get Synthetic CDISC Dataset
 #'
-#' @param dataset_name the lowercase name of the requested dataset e.g. "adsl"
+#' @param dataset_name the lowercase name of the requested dataset e.g. `"adsl"`
 #' @param name name of data collection. If name = "latest" then the newest datasets get returned
 #'
 #' @return A data.frame of synthetic data
