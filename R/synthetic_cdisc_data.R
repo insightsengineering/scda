@@ -5,7 +5,7 @@
 #'
 #' @return A data.frame of synthetic data
 #' @export
-#'
+#' @md
 #' @examples
 #' \dontrun{
 #' library(scda.2021)
