@@ -1,7 +1,7 @@
 Type: Package
 Package: scda
 Title: Package To Access Synthetic CDISC Archive Data
-Version: 0.1.2.9004.2
+Version: 0.1.2.9004.3
 Date: 2022-01-27
 Authors@R: 
     person("NEST", , , "basel.nestcicd@roche.com", role = c("aut", "cre"))
