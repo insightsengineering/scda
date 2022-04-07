@@ -7,7 +7,7 @@
 synthetic_cdisc_dataset(dataset_name, name)
 }
 \arguments{
-\item{dataset_name}{the lowercase name of the requested dataset e.g. "adsl"}
+\item{dataset_name}{the lowercase name of the requested dataset e.g. \code{adsl}}
 
 \item{name}{name of data collection. If name = "latest" then the newest datasets get returned}
 }
