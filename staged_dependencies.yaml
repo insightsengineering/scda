@@ -48,3 +48,6 @@ downstream_repos:
   insightsengineering/chevron:
     repo: insightsengineering/chevron
     host: https://github.com
+  nest/r-packages/teal.gallery:
+    repo: nest/r-packages/teal.gallery
+    host: https://code.roche.com
