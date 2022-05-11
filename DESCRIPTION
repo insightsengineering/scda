@@ -3,12 +3,13 @@ Package: scda
 Title: Package To Access Synthetic CDISC Archive Data
 Version: 0.1.3.9001
 Date: 2022-04-07
-Authors@R:
+Authors@R: c(
     person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = c("aut", "cre")),
     person("Adrian", "Waddell", , "adrian.waddell@roche.com", role = "aut"),
     person("Jana", "Stoilova", , "jana.stoilova@roche.com", role = "aut"),
     person("Nikolas", "Burkoff", , "nikolas.burkoff@roche.com", role = "aut"),
     person("F. Hoffmann-La Roche AG", role = c("cph", "fnd"))
+  )
 Description: Access Synthetic CDISC Data from Archive Packages.
 License: Apache License 2.0 | file LICENSE
 Depends:
