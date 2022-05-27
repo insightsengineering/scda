@@ -1,5 +1,7 @@
 # scda 0.1.3.9003
 
+* Updated package authors.
+
 # scda 0.1.3
 
 * Extended support to `scda.2022`.
