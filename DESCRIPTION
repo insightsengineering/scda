@@ -20,6 +20,7 @@ Imports:
 Suggests:
     scda.2021,
     scda.2022
+Config/Needs/website: insightsengineering/nesttemplate
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
