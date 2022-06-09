@@ -1,9 +1,7 @@
 url: https://insightsengineering.github.io/scda
 
 template:
-  params:
-    bootswatch: cerulean
-    ganalytics: "UA-125641273-1"
+  package: nesttemplate
 
 navbar:
   right:
