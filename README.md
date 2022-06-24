@@ -1,6 +1,6 @@
 # Scda: Synthetic CDISC Data Archive Accessor Functions  <a href='https://github.com/insightsengineering/scda'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
 
-This R package contains functions for accessing synthetic CDISC from data archive packages such as [scda.2022](https://github.com/insightsengineering/scda.2022).
+This R package contains functions for accessing synthetic CDISC from data archive packages such as [scda.2022](https://insightsengineering.github.io/scda.2022).
 At least one of these archive packages should be installed in order to use this package.
 
 This synthetic data can be used as test data when developing `teal` applications or statistical analysis functions and due to the data not been derived from a real clinical trial it provides an excellent method for generating reproducible examples when reporting errors.
@@ -18,7 +18,7 @@ if (!require("devtools")) install.packages("devtools")
 devtools::install_github("insightsengineering/scda@*release")
 ```
 
-It is necessary to manually install at least one data archive package (e.g. [scda.2022](https://github.com/insightsengineering/scda.2022)) before using this package.
+It is necessary to manually install at least one data archive package (e.g. [scda.2022](https://insightsengineering.github.io/scda.2022)) before using this package.
 
 ## Basic Usage
 
