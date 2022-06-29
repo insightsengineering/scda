@@ -40,7 +40,7 @@ synthetic_cdisc_data <- function(name) {
   avail <- ls_synthetic_cdisc_data()
 
   if (nrow(avail) == 0) {
-    stop("No synthetic CDISC data archive packages are installed.", call. = FALSE)
+    stop("No synthetic CDISC data archive packages are installed.",     call. = FALSE)
   }
 
   if (identical(name, "latest")) {
