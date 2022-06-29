@@ -37,6 +37,7 @@ synthetic_cdisc_dataset <- function(dataset_name, name) {
 #' names(latest_dfs)
 #' }
 synthetic_cdisc_data <- function(name) {
+
   avail <- ls_synthetic_cdisc_data()
 
   if (nrow(avail) == 0) {
