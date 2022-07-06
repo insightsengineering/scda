@@ -21,6 +21,7 @@ Suggests:
     scda.2021,
     scda.2022
 Remotes:
+    insightsengineering/scda.2021@*release
     insightsengineering/scda.2022@*release
 Config/Needs/website: insightsengineering/nesttemplate
 Encoding: UTF-8
