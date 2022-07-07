@@ -9,15 +9,15 @@ Note however that this data is somewhat idealized and real trial data is often s
 
 ## Installation
 
-It is recommended that you [create and use a Github PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to install the latest version of this package. Once you have the PAT, run the following:
+For releases from August 2022 it is recommended that you [create and use a Github PAT](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) to install the latest version of this package. Once you have the PAT, run the following:
 
 ```r
 Sys.setenv(GITHUB_PAT = "your_access_token_here")
-if (!require("devtools")) install.packages("devtools")
-devtools::install_github("insightsengineering/scda@*release")
+if (!require("remotes")) install.packages("remotes")
+remotes::install_github("insightsengineering/scda@*release")
 ```
 
-It is necessary to manually install at least one data archive package (e.g. [scda.2022](https://insightsengineering.github.io/scda.2022)) before using this package.
+A stable release of all `NEST` packages from June 2022 is also available [here](https://github.com/insightsengineering/depository#readme).
 
 ## Basic Usage
 
