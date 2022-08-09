@@ -1,6 +1,7 @@
 # scda 0.1.3.9011.2
 
 * Updated package authors.
+* Updated `README` file.
 
 # scda 0.1.3
 
