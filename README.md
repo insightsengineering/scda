@@ -42,9 +42,16 @@ latest_dfs <- synthetic_cdisc_data("latest")
 names(latest_dfs)
 ```
 
-[![Stargazers repo roster for @insightsengineering/scda](https://reporoster.com/stars/insightsengineering/scda)](https://github.com/insightsengineering/scda/stargazers)
-[![Forkers repo roster for @insightsengineering/scda](https://reporoster.com/forks/insightsengineering/scda)](https://github.com/insightsengineering/scda/network/members)
+## Stargazers and Forkers
 
-## Stargazers over time
+### Stargazers over time
 
 [![Stargazers over time](https://starchart.cc/insightsengineering/scda.svg)](https://starchart.cc/insightsengineering/scda)
+
+### Stargazers
+
+[![Stargazers repo roster for @insightsengineering/scda](https://reporoster.com/stars/insightsengineering/scda)](https://github.com/insightsengineering/scda/stargazers)
+
+### Forkers
+
+[![Forkers repo roster for @insightsengineering/scda](https://reporoster.com/forks/insightsengineering/scda)](https://github.com/insightsengineering/scda/network/members)
