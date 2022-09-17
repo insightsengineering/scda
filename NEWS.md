@@ -2,6 +2,8 @@
 
 * Updated package authors.
 * Updated `README` file.
+* Updated `synthetic_cdisc_dataset` function to return a single dataset.
+* Updated `ls_synthetic_cdisc_data` function to process single dataset files.
 
 # scda 0.1.3
 

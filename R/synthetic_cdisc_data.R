@@ -1,18 +1,46 @@
 #' Get Synthetic CDISC Dataset
 #'
 #' @param dataset_name the lowercase name of the requested dataset e.g. `adsl`
-#' @param name name of data collection. If name = "latest" then the newest datasets get returned
+#' @param name name of data collection. If name = "latest" then the newest dataset gets returned
 #'
 #' @return A data.frame of synthetic data
 #' @export
 #' @examples
 #' \dontrun{
-#' library(scda.2021)
+#' library(scda.2022)
 #'
 #' adsl <- synthetic_cdisc_dataset("adsl", "latest")
 #' }
 synthetic_cdisc_dataset <- function(dataset_name, name) {
-  synthetic_cdisc_data(name)[[dataset_name]]
+  avail <- ls_synthetic_cdisc_data()
+  dt <- paste(name, dataset_name, sep = "_")
+
+  if (nrow(avail) == 0) {
+    stop("No synthetic CDISC data archive packages are installed.", call. = FALSE)
+  }
+
+  if (identical(name, "latest")) {
+    ltst <- avail$Name[avail$Latest]
+    name <- grep(dataset_name, avail$Name[avail$Latest], value = TRUE)
+  }
+
+  stopifnot(
+    length(name) == 1 & length(dataset_name) == 1,
+    dt %in% avail$Name
+  )
+
+  i <- which(dt == avail$Name)
+
+  sel <- as.list(avail[i, ])
+
+  e <- new.env()
+  cl <- call("data", sel$Name, envir = quote(e), package = sel$Package)
+  eval(cl)
+
+  e[[dataset_name]] <- e[[dt]]
+  rm(list = dt, envir = e)
+
+  structure(e[[dataset_name]], data_from = c(sel$Package, sel$Name))
 }
 
 
@@ -104,10 +132,10 @@ ls_synthetic_cdisc_data <- function() {
 
     names(all) <- c("Name", "Title", "Package")
 
-    dates <- as.Date(substring(all$Name, nchar(all$Name) - 9), format = "%Y_%m_%d")
+    dates <- as.Date(substring(all$Name, 5, 14), format = "%Y_%m_%d")
 
     all$Latest <- FALSE # nolint
-    all$Latest[which.max(dates)] <- TRUE
+    all$Latest[dates == max(dates)] <- TRUE
 
     all
   }
