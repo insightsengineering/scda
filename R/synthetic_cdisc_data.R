@@ -9,7 +9,7 @@
 #' \dontrun{
 #' library(scda.2022)
 #'
-#' adsl <- synthetic_cdisc_dataset("adsl", "latest")
+#' adsl <- synthetic_cdisc_dataset("latest", "adsl")
 #' }
 synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
   avail <- ls_synthetic_cdisc_data()
@@ -21,7 +21,7 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
 
   if (identical(archive_name, "latest")) {
     ltst <- avail$archive_name[avail$Latest]
-    dt <- grep(dataset_name, avail$Name[avail$Latest], value = TRUE)
+    dt <- paste(substring(avail$Name[avail$Latest], 1, 14)[1], dataset_name, sep = "_")
   }
 
   stopifnot(
@@ -69,7 +69,7 @@ synthetic_cdisc_data <- function(name) {
   }
 
   if (identical(name, "latest")) {
-    name <- avail$Name[avail$Latest]
+    name <- substring(avail$Name[avail$Latest], 1, 14)[1]
   }
 
   stopifnot(
