@@ -21,6 +21,6 @@ Get Synthetic CDISC Dataset
 \dontrun{
 library(scda.2022)
 
-adsl <- synthetic_cdisc_dataset("adsl", "latest")
+adsl <- synthetic_cdisc_dataset("latest", "adsl")
 }
 }
