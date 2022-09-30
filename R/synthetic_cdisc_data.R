@@ -1,18 +1,43 @@
 #' Get Synthetic CDISC Dataset
 #'
+#' @param archive_name name of data collection. If name = "latest" then the newest dataset gets returned
 #' @param dataset_name the lowercase name of the requested dataset e.g. `adsl`
-#' @param name name of data collection. If name = "latest" then the newest datasets get returned
 #'
 #' @return A data.frame of synthetic data
 #' @export
 #' @examples
 #' \dontrun{
-#' library(scda.2021)
+#' library(scda.2022)
 #'
-#' adsl <- synthetic_cdisc_dataset("adsl", "latest")
+#' adsl <- synthetic_cdisc_dataset("latest", "adsl")
 #' }
-synthetic_cdisc_dataset <- function(dataset_name, name) {
-  synthetic_cdisc_data(name)[[dataset_name]]
+synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
+  avail <- ls_synthetic_cdisc_data()
+  dt <- paste(archive_name, dataset_name, sep = "_")
+
+  if (nrow(avail) == 0) {
+    stop("No synthetic CDISC data archive packages are installed.", call. = FALSE)
+  }
+
+  if (identical(archive_name, "latest")) {
+    ltst <- avail$archive_name[avail$Latest]
+    dt <- paste(substring(avail$Name[avail$Latest], 1, 14)[1], dataset_name, sep = "_")
+  }
+
+  stopifnot(
+    length(archive_name) == 1 & length(dataset_name) == 1,
+    dt %in% avail$Name
+  )
+
+  i <- which(dt == avail$Name)
+
+  sel <- as.list(avail[i, ])
+
+  e <- new.env()
+  cl <- call("data", sel$Name, envir = quote(e), package = sel$Package)
+  eval(cl)
+
+  structure(e[[dt]], data_from = c(sel$Package, sel$Name))
 }
 
 
@@ -44,7 +69,7 @@ synthetic_cdisc_data <- function(name) {
   }
 
   if (identical(name, "latest")) {
-    name <- avail$Name[avail$Latest]
+    name <- substring(avail$Name[avail$Latest], 1, 14)[1]
   }
 
   stopifnot(
@@ -104,10 +129,10 @@ ls_synthetic_cdisc_data <- function() {
 
     names(all) <- c("Name", "Title", "Package")
 
-    dates <- as.Date(substring(all$Name, nchar(all$Name) - 9), format = "%Y_%m_%d")
+    dates <- as.Date(substring(all$Name, 5, 14), format = "%Y_%m_%d")
 
     all$Latest <- FALSE # nolint
-    all$Latest[which.max(dates)] <- TRUE
+    all$Latest[dates == max(dates)] <- TRUE
 
     all
   }
