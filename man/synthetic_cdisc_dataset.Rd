@@ -4,12 +4,12 @@
 \alias{synthetic_cdisc_dataset}
 \title{Get Synthetic CDISC Dataset}
 \usage{
-synthetic_cdisc_dataset(dataset_name, name)
+synthetic_cdisc_dataset(archive_name, dataset_name)
 }
 \arguments{
-\item{dataset_name}{the lowercase name of the requested dataset e.g. \code{adsl}}
+\item{archive_name}{name of data collection. If name = "latest" then the newest dataset gets returned}
 
-\item{name}{name of data collection. If name = "latest" then the newest datasets get returned}
+\item{dataset_name}{the lowercase name of the requested dataset e.g. \code{adsl}}
 }
 \value{
 A data.frame of synthetic data
@@ -19,8 +19,8 @@ Get Synthetic CDISC Dataset
 }
 \examples{
 \dontrun{
-library(scda.2021)
+library(scda.2022)
 
-adsl <- synthetic_cdisc_dataset("adsl", "latest")
+adsl <- synthetic_cdisc_dataset("latest", "adsl")
 }
 }
