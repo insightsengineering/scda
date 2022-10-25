@@ -4,7 +4,7 @@
   packageStartupMessage(
     if (!is_scdax) {
       paste0(
-        "There are no scda.XXXX libraries installed, like scda.2021.",
+        "There are no scda.XXXX libraries installed, like scda.2022.",
         "\nPlease install an scda database to take full advantage of the scda package."
       )
     }

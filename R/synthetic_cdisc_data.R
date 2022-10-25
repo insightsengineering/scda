@@ -53,9 +53,9 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
 #'
 #' @examples
 #' \dontrun{
-#' library(scda.2021)
+#' library(scda.2022)
 #'
-#' dfs <- synthetic_cdisc_data("rcd_2021_03_22")
+#' dfs <- synthetic_cdisc_data("rcd_2022_06_27")
 #' names(dfs)
 #'
 #' latest_dfs <- synthetic_cdisc_data("latest")
