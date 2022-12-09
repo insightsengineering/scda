@@ -5,7 +5,8 @@
     if (!is_scdax) {
       paste0(
         "There are no scda.XXXX libraries installed, like scda.2022.",
-        "\nPlease install an scda database to take full advantage of the scda package."
+        "\nPlease install an scda database to take full advantage of the scda package.",
+        "\nVisit https://insightsengineering.github.io/scda.2022/ for details on scda.2022 and how it can be installed."
       )
     }
   )
