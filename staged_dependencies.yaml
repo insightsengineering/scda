@@ -6,8 +6,8 @@ upstream_repos:
     repo: insightsengineering/scda.2022
     host: https://github.com
 downstream_repos:
-  insightsengineering/tern:
-    repo: insightsengineering/tern
+  insightsengineering/scda.test:
+    repo: insightsengineering/scda.test
     host: https://github.com
   insightsengineering/teal.data:
     repo: insightsengineering/teal.data
