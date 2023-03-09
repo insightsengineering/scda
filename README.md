@@ -38,7 +38,7 @@ remotes::install_github("insightsengineering/scda@*release")
 
 A stable release of all `NEST` packages from June 2022 is also available [here](https://github.com/insightsengineering/depository#readme).
 
-To install scda.2022, run the following:
+To install `scda.2022`, run the following:
 
 ```r
 Sys.setenv(GITHUB_PAT = "your_access_token_here")
@@ -46,7 +46,7 @@ if (!require("remotes")) install.packages("remotes")
 remotes::install_github("insightsengineering/scda.2022@*release")
 ```
 
-Please see the [scda.2022 website](https://insightsengineering.github.io/scda.2022/) for more details on the scda.2022 package.
+Please see the [`scda.2022` package website](https://insightsengineering.github.io/scda.2022/) for more details.
 
 ## Basic Usage
 

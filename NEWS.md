@@ -1,12 +1,14 @@
 # scda 0.1.5.9007
 
+* Updated examples to use `scda.2022` data.
+* Remove dependency on `scda.2021`.
+
 # scda 0.1.5
 
 * Updated package authors.
 * Updated `README` file.
 * Updated `synthetic_cdisc_dataset` function to return a single dataset.
 * Updated `ls_synthetic_cdisc_data` function to process single dataset files.
-* Updated examples to use `scda.2022` data.
 
 # scda 0.1.3
 
