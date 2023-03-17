@@ -42,6 +42,3 @@ downstream_repos:
   insightsengineering/teal.modules.helios:
     repo: insightsengineering/teal.modules.helios
     host: https://github.com
-  insightsengineering/chevron:
-    repo: insightsengineering/chevron
-    host: https://github.com
