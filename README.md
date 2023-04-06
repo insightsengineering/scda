@@ -1,9 +1,9 @@
 # Scda: Synthetic CDISC Data Archive Accessor Functions <a href='https://insightsengineering.github.io/scda'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
 
 <!-- start badges -->
-[![Check 🛠](https://github.com/insightsengineering/scda/actions/workflows/check.yaml/badge.svg)](https://github.com/insightsengineering/scda/actions/workflows/check.yaml)
+[![Check 🛠](https://github.com/insightsengineering/scda/actions/workflows/check.yaml/badge.svg)](https://insightsengineering.github.io/scda/main/unit-test-report/)
 [![Docs 📚](https://github.com/insightsengineering/scda/actions/workflows/docs.yaml/badge.svg)](https://insightsengineering.github.io/scda/)
-[![Code Coverage 📔](https://raw.githubusercontent.com/insightsengineering/scda/_xml_coverage_reports/data/main/badge.svg)](https://raw.githubusercontent.com/insightsengineering/scda/_xml_coverage_reports/data/main/coverage.xml)
+[![Code Coverage 📔](https://raw.githubusercontent.com/insightsengineering/scda/_xml_coverage_reports/data/main/badge.svg)](https://insightsengineering.github.io/scda/main/coverage-report/)
 
 ![GitHub forks](https://img.shields.io/github/forks/insightsengineering/scda?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/insightsengineering/scda?style=social)
