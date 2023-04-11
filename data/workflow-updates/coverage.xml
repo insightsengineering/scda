@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage line-rate="0.0833333333333333" branch-rate="0" lines-covered="6" lines-valid="72" branches-covered="0" branches-valid="0" complexity="0" version="3.6.1" timestamp="2023-04-06 13:27:44">
-  <sources/>
+<!DOCTYPE coverage SYSTEM "https://raw.githubusercontent.com/cobertura/cobertura/master/cobertura/src/site/htdocs/xml/coverage-04.dtd">
+<coverage line-rate="0.0833333333333333" branch-rate="0" lines-covered="6" lines-valid="72" branches-covered="0" branches-valid="0" complexity="0" version="3.6.2" timestamp="2023-04-11 13:54:07">
+  <sources>
+    <source>/__w/scda/scda/scda</source>
+  </sources>
   <packages>
     <package name="scda" line-rate="0.0833333333333333" branch-rate="0" complexity="0">
       <classes>
         <class name="synthetic_cdisc_data.R" filename="R/synthetic_cdisc_data.R" line-rate="0" branch-rate="0" complexity="0">
           <methods>
-            <method name="synthetic_cdisc_dataset" signature="" line-rate="0" branch-rate="0">
+            <method name="synthetic_cdisc_dataset" signature="" line-rate="0" branch-rate="0" complexity="0">
               <lines>
                 <line number="15" hits="0" branch="false"/>
                 <line number="16" hits="0" branch="false"/>
@@ -27,7 +30,7 @@
                 <line number="40" hits="0" branch="false"/>
               </lines>
             </method>
-            <method name="synthetic_cdisc_data" signature="" line-rate="0" branch-rate="0">
+            <method name="synthetic_cdisc_data" signature="" line-rate="0" branch-rate="0" complexity="0">
               <lines>
                 <line number="65" hits="0" branch="false"/>
                 <line number="67" hits="0" branch="false"/>
@@ -46,7 +49,7 @@
                 <line number="88" hits="0" branch="false"/>
               </lines>
             </method>
-            <method name="ls_synthetic_cdisc_data" signature="" line-rate="0" branch-rate="0">
+            <method name="ls_synthetic_cdisc_data" signature="" line-rate="0" branch-rate="0" complexity="0">
               <lines>
                 <line number="101" hits="0" branch="false"/>
                 <line number="102" hits="0" branch="false"/>
@@ -146,7 +149,7 @@
         </class>
         <class name="zzz.R" filename="R/zzz.R" line-rate="0.545454545454545" branch-rate="0" complexity="0">
           <methods>
-            <method name=".onAttach" signature="" line-rate="0.545454545454545" branch-rate="0">
+            <method name=".onAttach" signature="" line-rate="0.545454545454545" branch-rate="0" complexity="0">
               <lines>
                 <line number="2" hits="1" branch="false"/>
                 <line number="3" hits="1" branch="false"/>
