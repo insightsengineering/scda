@@ -12,20 +12,8 @@ downstream_repos:
   insightsengineering/teal.data:
     repo: insightsengineering/teal.data
     host: https://github.com
-  insightsengineering/teal.transform:
-    repo: insightsengineering/teal.transform
-    host: https://github.com
-  insightsengineering/teal:
-    repo: insightsengineering/teal
-    host: https://github.com
   insightsengineering/teal.modules.general:
     repo: insightsengineering/teal.modules.general
-    host: https://github.com
-  insightsengineering/osprey:
-    repo: insightsengineering/osprey
-    host: https://github.com
-  insightsengineering/teal.osprey:
-    repo: insightsengineering/teal.osprey
     host: https://github.com
   insightsengineering/goshawk:
     repo: insightsengineering/goshawk
