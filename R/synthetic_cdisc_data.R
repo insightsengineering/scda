@@ -1,16 +1,18 @@
 #' Get Synthetic CDISC Dataset
 #'
-#' @param archive_name name of data collection. If name = "latest" then the newest dataset gets returned
-#' @param dataset_name the lowercase name of the requested dataset e.g. `adsl`
+#' @param archive_name name of data collection. If `archive_name = "latest"` then the newest dataset gets returned.
+#' @param dataset_name the lowercase name of the requested dataset (e.g. `"adsl"`).
 #'
-#' @return A data.frame of synthetic data
-#' @export
+#' @return A `data.frame` containing synthetic data.
+#'
 #' @examples
 #' \dontrun{
 #' library(scda.2022)
 #'
 #' adsl <- synthetic_cdisc_dataset("latest", "adsl")
 #' }
+#'
+#' @export
 synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
   avail <- ls_synthetic_cdisc_data()
   dt <- paste(archive_name, dataset_name, sep = "_")
@@ -20,7 +22,6 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
   }
 
   if (identical(archive_name, "latest")) {
-    ltst <- avail$archive_name[avail$Latest]
     dt <- paste(substring(avail$Name[avail$Latest], 1, 14)[1], dataset_name, sep = "_")
   }
 
@@ -40,16 +41,11 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
   structure(e[[dt]], data_from = c(sel$Package, sel$Name))
 }
 
-
-
 #' Get Synthetic CDISC Data
 #'
-#' @param name name of data collection. If name == "latest" then the newest datasets get returned
+#' @param name name of data collection to return. If `name = "latest"` then the newest datasets get returned.
 #'
-#' @export
-#'
-#' @return A named list with synthetic data
-#'
+#' @return A named `list` containing synthetic datasets.
 #'
 #' @examples
 #' \dontrun{
@@ -61,6 +57,8 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
 #' latest_dfs <- synthetic_cdisc_data("latest")
 #' names(latest_dfs)
 #' }
+#'
+#' @export
 synthetic_cdisc_data <- function(name) {
   avail <- ls_synthetic_cdisc_data()
 
@@ -88,15 +86,14 @@ synthetic_cdisc_data <- function(name) {
   structure(e[[sel$Name]], data_from = c(sel$Package, sel$Name))
 }
 
-
 #' List Available Data
 #'
 #' @importFrom utils installed.packages data
-#' @export
 #'
 #' @examples
-#'
 #' ls_synthetic_cdisc_data()
+#'
+#' @export
 ls_synthetic_cdisc_data <- function() {
   all_pkgs <- as.vector(installed.packages()[, "Package"])
   pkgs <- unique(all_pkgs[grepl("^scda\\.[[:digit:]]{4}$", all_pkgs)])
