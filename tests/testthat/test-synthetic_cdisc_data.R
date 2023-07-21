@@ -29,5 +29,5 @@ testthat::test_that("synthetic_cdisc_data works as expected", {
 testthat::test_that("ls_synthetic_cdisc_data works as expected", {
   which_data <- ls_synthetic_cdisc_data()
   testthat::expect_gte(nrow(which_data), 42)
-  testthat::expect_identical(ncol(which_data), 4)
+  testthat::expect_equal(ncol(which_data), 4)
 })
