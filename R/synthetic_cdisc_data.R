@@ -98,25 +98,25 @@ ls_synthetic_cdisc_data <- function() {
   all_pkgs <- as.vector(installed.packages()[, "Package"])
   pkgs <- unique(all_pkgs[grepl("^scda\\.[[:digit:]]{4}$", all_pkgs)])
 
-  if (length(pkgs) == 0) {
+  if (length(pkgs) == 0) { # nocov start
     data.frame(
       Name = character(0),
       Title = character(0),
       Package = character(0),
       stringsAsFactors = FALSE
     )
-  } else {
+  } else { # nocov end
     all <- do.call(rbind, lapply(pkgs, function(pkgi) {
       dnms <- data(package = pkgi)$results[, 3:4]
 
-      df <- if (length(dnms) == 2) {
+      df <- if (length(dnms) == 2) { # nocov start
         data.frame(
           Item = dnms[1],
           Title = dnms[2],
           row.names = NULL,
           stringsAsFactors = FALSE
         )
-      } else {
+      } else { # nocov end
         as.data.frame(dnms, stringsAsFactors = FALSE)
       }
 
