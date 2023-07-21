@@ -17,9 +17,9 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
   avail <- ls_synthetic_cdisc_data()
   dt <- paste(archive_name, dataset_name, sep = "_")
 
-  if (nrow(avail) == 0) {
+  if (nrow(avail) == 0) { # nocov start
     stop("No synthetic CDISC data archive packages are installed.", call. = FALSE)
-  }
+  } # nocov end
 
   if (identical(archive_name, "latest")) {
     dt <- paste(substring(avail$Name[avail$Latest], 1, 14)[1], dataset_name, sep = "_")
@@ -62,9 +62,9 @@ synthetic_cdisc_dataset <- function(archive_name, dataset_name) {
 synthetic_cdisc_data <- function(name) {
   avail <- ls_synthetic_cdisc_data()
 
-  if (nrow(avail) == 0) {
+  if (nrow(avail) == 0) { # nocov start
     stop("No synthetic CDISC data archive packages are installed.", call. = FALSE)
-  }
+  } # nocov end
 
   if (identical(name, "latest")) {
     name <- substring(avail$Name[avail$Latest], 1, 14)[1]
