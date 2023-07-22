@@ -10,6 +10,6 @@ ls_synthetic_cdisc_data()
 List Available Data
 }
 \examples{
-
 ls_synthetic_cdisc_data()
+
 }
