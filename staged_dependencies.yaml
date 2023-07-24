@@ -9,6 +9,3 @@ downstream_repos:
   insightsengineering/scda.test:
     repo: insightsengineering/scda.test
     host: https://github.com
-  insightsengineering/teal.modules.helios:
-    repo: insightsengineering/teal.modules.helios
-    host: https://github.com
