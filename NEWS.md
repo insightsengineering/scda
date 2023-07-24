@@ -1,7 +1,8 @@
-# scda 0.1.6.9007
+# scda 0.1.6.9009
 
 * Updated examples to use `scda.2022` data.
-* Remove dependency on `scda.2021`.
+* Removed dependency on `scda.2021`.
+* Added tests.
 
 # scda 0.1.5
 
