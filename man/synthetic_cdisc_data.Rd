@@ -7,10 +7,10 @@
 synthetic_cdisc_data(name)
 }
 \arguments{
-\item{name}{name of data collection. If name == "latest" then the newest datasets get returned}
+\item{name}{name of data collection to return. If \code{name = "latest"} then the newest datasets get returned.}
 }
 \value{
-A named list with synthetic data
+A named \code{list} containing synthetic datasets.
 }
 \description{
 Get Synthetic CDISC Data
@@ -25,4 +25,5 @@ names(dfs)
 latest_dfs <- synthetic_cdisc_data("latest")
 names(latest_dfs)
 }
+
 }
