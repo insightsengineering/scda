@@ -1,4 +1,4 @@
-# Scda: Synthetic CDISC Data Archive Accessor Functions <a href='https://insightsengineering.github.io/scda'><img src="man/figures/logo.png" align="right" height="139" style="max-width: 100%;"/></a>
+# scda: Synthetic CDISC Data Archive Accessor Functions <a href='https://insightsengineering.github.io/scda'><img src="man/figures/scda.png" align="right" height="200" width="200"/></a>
 
 <!-- start badges -->
 [![Check 🛠](https://github.com/insightsengineering/scda/actions/workflows/check.yaml/badge.svg)](https://insightsengineering.github.io/scda/main/unit-test-report/)
