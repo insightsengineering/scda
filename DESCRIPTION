@@ -1,8 +1,8 @@
 Type: Package
 Package: scda
 Title: Package to Access Synthetic CDISC Archive Data
-Version: 0.1.6.9013
-Date: 2023-10-20
+Version: 0.1.6.9014
+Date: 2023-12-13
 Authors@R: c(
     person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = c("aut", "cre")),
     person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
