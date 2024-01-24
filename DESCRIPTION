@@ -19,7 +19,8 @@ Imports:
     utils
 Suggests:
     scda.2022 (>= 0.1.4),
-    testthat
+    testthat,
+    withr (>= 2.0.0)
 Remotes:
     insightsengineering/scda.2022@*release
 Config/Needs/website: insightsengineering/nesttemplate
@@ -27,4 +28,4 @@ Encoding: UTF-8
 Language: en-US
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
+RoxygenNote: 7.3.0
