@@ -24,6 +24,7 @@ Suggests:
 Remotes:
     insightsengineering/scda.2022@*release
 Config/Needs/website: insightsengineering/nesttemplate
+Config/Needs/verdepcheck: insightsengineering/scda.2022, r-lib/testthat, r-lib/withr
 Encoding: UTF-8
 Language: en-US
 LazyData: true
