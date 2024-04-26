@@ -1,8 +1,8 @@
 Type: Package
 Package: scda
 Title: Package to Access Synthetic CDISC Archive Data
-Version: 0.1.6.9017
-Date: 2024-03-04
+Version: 0.1.6.9018
+Date: 2024-04-22
 Authors@R: c(
     person("Pawel", "Rucki", , "pawel.rucki@roche.com", role = c("aut", "cre")),
     person("Adrian", "Waddell", , "adrian.waddell@gene.com", role = "aut"),
@@ -18,11 +18,13 @@ Depends:
 Imports:
     utils
 Suggests:
-    scda.2022 (>= 0.1.4),
-    testthat,
+    scda.2022 (>= 0.1.5),
+    testthat (>= 3.0.4),
     withr (>= 2.0.0)
 Remotes:
     insightsengineering/scda.2022@*release
+Config/Needs/verdepcheck: insightsengineering/scda.2022, r-lib/testthat,
+    r-lib/withr
 Config/Needs/website: insightsengineering/nesttemplate
 Encoding: UTF-8
 Language: en-US
