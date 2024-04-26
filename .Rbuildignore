@@ -17,3 +17,5 @@ coverage.*
 ^\.pre-commit-config\.yaml
 ^man-roxygen$
 ^pkgdown$
+^revdeprefs\.yaml$
+^revdep$
