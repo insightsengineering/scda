@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="synthetic_cdisc_data" timestamp="2024-08-01T15:21:07Z" hostname="137d993f1295" tests="14" skipped="0" failures="0" errors="0" time="2.839">
-    <testcase time="0.159" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="0.029" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="0.00900000000000001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="0.002" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="0.00900000000000001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="0.002" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+  <testsuite name="synthetic_cdisc_data" timestamp="2024-08-01T15:22:38Z" hostname="a9c99c03c2cb" tests="14" skipped="0" failures="0" errors="0" time="2.855">
+    <testcase time="0.038" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+    <testcase time="0.095" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+    <testcase time="0.00700000000000001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+    <testcase time="0.001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+    <testcase time="0.00800000000000001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
     <testcase time="0.001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
     <testcase time="0.001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
-    <testcase time="1.315" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
+    <testcase time="0.001" classname="synthetic_cdisc_data" name="synthetic_cdisc_dataset_works_as_expected"/>
+    <testcase time="1.352" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
     <testcase time="0.00300000000000011" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
-    <testcase time="1.297" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
+    <testcase time="1.337" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
     <testcase time="0.00299999999999967" classname="synthetic_cdisc_data" name="synthetic_cdisc_data_works_as_expected"/>
-    <testcase time="0.00700000000000012" classname="synthetic_cdisc_data" name="ls_synthetic_cdisc_data_works_as_expected"/>
-    <testcase time="0.00200000000000022" classname="synthetic_cdisc_data" name="ls_synthetic_cdisc_data_works_as_expected"/>
+    <testcase time="0.00600000000000023" classname="synthetic_cdisc_data" name="ls_synthetic_cdisc_data_works_as_expected"/>
+    <testcase time="0.00199999999999978" classname="synthetic_cdisc_data" name="ls_synthetic_cdisc_data_works_as_expected"/>
   </testsuite>
 </testsuites>
