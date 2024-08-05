@@ -1,39 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://insightsengineering.github.io/scda/404.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/CONTRIBUTING.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/SECURITY.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/index.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/reference/ls_synthetic_cdisc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/reference/synthetic_cdisc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://insightsengineering.github.io/scda/reference/synthetic_cdisc_dataset.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://insightsengineering.github.io/scda/404.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/CONTRIBUTING.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/LICENSE-text.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/SECURITY.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/authors.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/index.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/news/index.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/reference/index.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/reference/ls_synthetic_cdisc_data.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/reference/synthetic_cdisc_data.html</loc></url>
+<url><loc>https://insightsengineering.github.io/scda/reference/synthetic_cdisc_dataset.html</loc></url>
 </urlset>
+
