@@ -1,3 +1,5 @@
+> :warning: **WARNING**: `scda` is deprecated and no longer maintained. Use at your own risk.
+
 # scda: Synthetic CDISC Data Archive Accessor Functions <a href='https://insightsengineering.github.io/scda'><img src="man/figures/scda.png" align="right" height="200" width="200"/></a>
 
 <!-- start badges -->
